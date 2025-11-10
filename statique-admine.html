@@ -6,21 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Statiques</title>
     <link rel="stylesheet" href="src/all.min.css">
-    
 
-   <link rel="stylesheet" href="src/style.css">
-   <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 
-    
+    <link rel="stylesheet" href="src/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kranky&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@410&display=swap"
+        rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+
+
 </head>
 
-<body class="bg-blue-50">
-    <header class="flex justify-center">
-        <div class="container flex justify-between items-center h-20 w-[90%]">
-            <div class="title text-black font-serif text-3xl ">
-                <img src="image-statique/Logo.png" alt="" class="w-15 h-15 rounded-full">
+
+<body class="bg-blue-50 relative" style="font-family: serif , 'Kranky';">
+
+
+    <header class="flex justify-center  bg-[#000f89] fixed top-0 left-0 right-0">
+        <div class="container flex justify-between items-center h-20 w-[90%] max-w-[500px]">
+            <!-- <div class="title text-black font-serif text-3xl ">
+                <img src="image-statique/Logo.png" alt="" class="w-11 h-11 rounded-full">
+            </div> -->
+
+            <div class="logo font-bold" style="font-size: 25px; font-family: 'Kranky', serif;">
+                <h1>
+                    <span class="text-white">Campus</span>
+                    <span class="text-[#D10404]">Planner</span>
+                </h1>
+
             </div>
-            <div class="icons flex items-center gap-x-5">
+
+            <nav class="nav-links">
+
+                <span class="menu text-white">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+
+                <span class="x text-white absolute top-[15px] right-[250px] z-11 hidden">
+                    <i class="fa-solid fa-x"></i>
+                </span>
+
+                <ul
+                    class="ul-links pt-[70px] pl-[40px] pr-[10px] bg-[#005f69] absolute top-0 right-0 h-screen z-10 w-[300px] hidden">
+                    <li><a href="#"
+                            class="text-white py-[15px] block border-b-[1px] border-b-[solid] border-b-[#D10404]">Acueil</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-white py-[15px] block border-b-[1px] border-b-[solid] border-b-[#D10404]">Formations</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-white py-[15px] block border-b-[1px] border-b-[solid] border-b-[#D10404]">Événements</a>
+                    </li>
+                    <li><a href="statique-admine.html"
+                            class="text-white py-[15px] block border-b-[1px] border-b-[solid] border-b-[#D10404]">Tableau de Bord</a>
+                    </li>
+                    <li><a href="statique-admine.html"
+                            class="text-white py-[15px] block border-b-[1px] border-b-[solid] border-b-[#D10404]">Jeu</a>
+                    </li>
+                    <li><a href="statique-admine.html"
+                            class="text-white py-[15px] block border-b-[1px] border-b-[solid] border-b-[#D10404]">Se connecter</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-white py-[15px] block ">S’inscrire</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <!-- <div class="icons flex items-center gap-x-5">
 
                 <div class="icon flex justify-center items-center bg-blue-100 h-11 rounded-full hover:-translate-y-px">
                     <div class="flex items-center gap-x-8">
@@ -38,20 +89,19 @@
 
                 <div
                     class="icon flex justify-center items-center  bg-blue-100 w-11 h-11 rounded-full overflow-hidden p-0.5 hover:-translate-y-px">
-                    
                     <img src="image-statique/woman.png" alt="" class="w-full h-full ">
                 </div>
 
-            </div>
+            </div> -->
         </div>
     </header>
 
-    <aside id="default-sidebar"
+    <!-- <aside id="default-sidebar"
         class="fixed top-20 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 "
         aria-label="Sidebar">
 
         <div class="h-full px-3 py-4 overflow-y-auto bg-white rounded-2xl">
-            <p class="px-3 py-4 text-blue-500">Main Menu</p>
+            <p class="px-3 py-4 " style="font-family: 'Kranky', serif; color:#011F5B;">Main Menu</p>
 
             <ul class="space-y-2 font-medium ml-4">
                 <li>
@@ -139,7 +189,160 @@
                 </li>
             </ul>
         </div>
-    </aside>
+    </aside>-->
+
+    <div class="flex justify-center mb-10">
+        <div class="container flex flex-col justify-center w-[90%] max-w-[500px]">
+            <div class="flex justify-between  mt-6 w-[100%]" style="">
+                <h3 class="font-bold text-2xl " style="font-family: 'Kranky', serif; color:#011F5B;">
+                    STATISTQUES
+                </h3>
+
+                <button class=" text-white rounded-sm px-1 hover:-translate-y-px font-bold"
+                    style="font-family:  serif; background-color: #008E97;">Ajouter événement</button>
+            </div>
+
+            <div class=" border-gray-200  rounded-lg w-[100%] mt-10">
+                <div class="grid grid-cols-1 gap-y-10 mb-4 ">
+                    <div class="grid grid-cols-1 items-center justify-center h-24 rounded-sm bg-white"
+                        style="box-shadow: 1px 4px 9px 1px #012169;">
+                        <p class="" style="text-align: center;">Total des événements</p>
+                        <p class="text-blue-500 font-bold " style="text-align: center;">10</p>
+                    </div>
+                    <div class="grid grid-cols-1 items-center justify-center h-24 rounded-sm bg-white"
+                        style="box-shadow: 1px 4px 9px 1px #012169;">
+
+                        <p style="text-align: center;">Total des formations</p>
+                        <p class="text-blue-500 font-bold " style="text-align: center;">10</p>
+                    </div>
+                    <div class="grid grid-cols-1 items-center justify-center h-24 rounded-sm bg-white"
+                        style="box-shadow: 1px 4px 9px 1px #012169 ;">
+
+                        <p style="text-align: center;">Total des étudiants</p>
+                        <p class="text-blue-500 font-bold " style="text-align: center;">10</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-y-4 mt-[40px]">
+                    <div class="flex items-center justify-center rounded-sm bg-white p-1 hover:-translate-y-px"
+                        style="box-shadow: 1px 4px 9px 1px #012169; flex-direction: column; row-gap: 10px;">
+
+                        <canvas id="ageDistributionChart" style=" margin-bottom: 10px;"></canvas>
+
+                    </div>
+
+                    <div class="flex items-center justify-center rounded-sm bg-white p-1 hover:-translate-y-px"
+                        style="box-shadow: 1px 4px 9px 1px #012169; flex-direction: column; row-gap: 10px;">
+
+                        <canvas id="interestsChart" style=" margin-bottom: 10px;"></canvas>
+
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-y-4 mt-[40px]">
+                    <div class="flex items-center justify-center rounded-sm bg-white p-1 hover:-translate-y-px"
+                        style="box-shadow: 1px 4px 9px 1px #012169; flex-direction: column; row-gap: 10px;">
+
+                        <canvas id="trafficChart" style=" margin-bottom: 10px;"></canvas>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- <div class="flex items-center justify-center h-48 mb-4 rounded-sm bg-white"
+            style="box-shadow: 1px 4px 9px 1px #012169;">
+            <p class="text-2xl text-gray-400 dark:text-gray-500">
+                <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 18 18">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 1v16M1 9h16" />
+                </svg>
+            </p>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+            <div class="flex items-center justify-center rounded-sm  bg-white h-28"
+                style="box-shadow: 1px 4px 9px 1px #012169;">
+                <p class="text-2xl text-gray-400 dark:text-gray-500">
+                    <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 18 18">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 1v16M1 9h16" />
+                    </svg>
+                </p>
+            </div>
+            <div class="flex items-center justify-center rounded-sm bg-white h-28 "
+                style="box-shadow: 1px 4px 9px 1px #012169;">
+                <p class="text-2xl text-gray-400 dark:text-gray-500">
+                    <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 18 18">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 1v16M1 9h16" />
+                    </svg>
+                </p>
+            </div>
+            <div class="flex items-center justify-center rounded-sm bg-white h-28 "
+                style="box-shadow: 1px 4px 9px 1px #012169;">
+                <p class="text-2xl text-gray-400 dark:text-gray-500">
+                    <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 18 18">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 1v16M1 9h16" />
+                    </svg>
+                </p>
+            </div>
+            <div class="flex items-center justify-center rounded-sm bg-white h-28 "
+                style="box-shadow: 1px 4px 9px 1px #012169;">
+                <p class="text-2xl text-gray-400 dark:text-gray-500">
+                    <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 18 18">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 1v16M1 9h16" />
+                    </svg>
+                </p>
+            </div> 
+        </div> -->
+    </div>
+    
+
+    <footer class="flex justify-center bg-[#000f89]">
+        <div class="container w-[90%] max-w-[500px]">
+
+            <div class="footer-links flex flex-col items-center py-[10px]">    
+                <!-- margin-left: auto; -->
+                <!-- margin-right: auto;
+                width: 100%;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: space-around; -->
+
+
+                <div class="lniks-media flex justify-around mt-2.5 mb-5 w-[100%]">
+                    <i class="fa-brands fa-facebook text-white"></i>
+                    <i class="fa-brands fa-square-twitter text-white"></i>
+                    <i class="fa-brands fa-square-instagram text-white"></i>
+                    <i class="fa-brands fa-youtube text-white"></i>
+                </div>
+
+                <hr class=" w-[100%] h-0.25 border-0 my-[10px] bg-[#D10404]">  
+               
+            </div>
+
+            <div class="footer-bottom w-[100%] text-white text-center mt-4 mb-2.5 bg-black py-2.5 text-[10px]">
+                <p>© 2025 Campus Planner Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="chart.umd.min.js"></script>
+    <script src="script_admine.js"></script>
+
 </body>
 
 </html>
