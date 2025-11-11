@@ -18,14 +18,11 @@
 </head>
 
 
-<body class="bg-blue-50 relative" style="font-family: serif , 'Kranky';">
+<body class="bg-blue-50 relative m-0 p-0 sm:overflow-auto transition-colors duration-500" style="font-family: serif , 'Kranky';">
 
 
-    <header class="flex justify-center  bg-[#000f89] fixed top-0 left-0 right-0">
-        <div class="container flex justify-between items-center h-20 w-[90%] max-w-[500px]">
-            <!-- <div class="title text-black font-serif text-3xl ">
-                <img src="image-statique/Logo.png" alt="" class="w-11 h-11 rounded-full">
-            </div> -->
+    <header class="flex justify-center  bg-[#000f89] fixed top-0 left-0 right-0 z-10  sm:hidden">
+        <div class="container flex justify-between items-center h-20 w-[90%]">
 
             <div class="logo font-bold" style="font-size: 25px; font-family: 'Kranky', serif;">
                 <h1>
@@ -57,26 +54,38 @@
                             class="text-white py-[15px] block border-b-[1px] border-b-[solid] border-b-[#D10404]">Événements</a>
                     </li>
                     <li><a href="statique-admine.html"
-                            class="text-white py-[15px] block border-b-[1px] border-b-[solid] border-b-[#D10404]">Tableau de Bord</a>
+                            class="text-white py-[15px] block border-b-[1px] border-b-[solid] border-b-[#D10404]">Tableau
+                            de Bord</a>
                     </li>
                     <li><a href="statique-admine.html"
                             class="text-white py-[15px] block border-b-[1px] border-b-[solid] border-b-[#D10404]">Jeu</a>
                     </li>
                     <li><a href="statique-admine.html"
-                            class="text-white py-[15px] block border-b-[1px] border-b-[solid] border-b-[#D10404]">Se connecter</a>
+                            class="text-white py-[15px] block border-b-[1px] border-b-[solid] border-b-[#D10404]">Se
+                            connecter</a>
                     </li>
-                    <li><a href="#"
-                            class="text-white py-[15px] block ">S’inscrire</a>
+                    <li><a href="#" class="text-white py-[15px] block ">S'inscrire</a>
                     </li>
-                    
+
                 </ul>
             </nav>
-            <!-- <div class="icons flex items-center gap-x-5">
+
+        </div>
+    </header>
+
+    <header class="justify-center fixed top-0 left-0 right-0 z-10 hidden bg-[#000f89] sm:flex">
+        <div class="container flex justify-between items-center h-20 w-[90%]">
+            <div class="title text-black font-serif text-3xl ">
+                <img src="image-statique/Logo.png" alt="" class="w-15 h-15 rounded-full">
+            </div>
+            <div class="icons flex items-center gap-x-5">
 
                 <div class="icon flex justify-center items-center bg-blue-100 h-11 rounded-full hover:-translate-y-px">
-                    <div class="flex items-center gap-x-8">
-                        <i class="fa-solid fa-moon m-0 p-0 text-2xl pl-2"></i>
-                        <div class="bg-blue-700 w-11 h-11 flex justify-center items-center rounded-full">
+                    <div class="flex items-center gap-x-2">
+                        <div class="w-11 h-11 flex justify-center items-center rounded-full" id="dark">
+                            <i class="fa-solid fa-moon m-0 p-0 text-2xl pl-2 "></i>
+                        </div>
+                        <div class="bg-blue-700 w-11 h-11 flex justify-center items-center rounded-full" id="clair">
                             <i class="fa-solid fa-lightbulb text-amber-300 text-2xl"></i>
                         </div>
                     </div>
@@ -92,15 +101,15 @@
                     <img src="image-statique/woman.png" alt="" class="w-full h-full ">
                 </div>
 
-            </div> -->
+            </div>
         </div>
     </header>
 
-    <!-- <aside id="default-sidebar"
-        class="fixed top-20 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 "
+    <aside id="default-sidebar "
+        class="fixed top-22 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 hidden sm:block"
         aria-label="Sidebar">
 
-        <div class="h-full px-3 py-4 overflow-y-auto bg-white rounded-2xl">
+        <div class="h-full px-3 py-4 bg-white dark:bg-gray-800 rounded-2xl">
             <p class="px-3 py-4 " style="font-family: 'Kranky', serif; color:#011F5B;">Main Menu</p>
 
             <ul class="space-y-2 font-medium ml-4">
@@ -114,7 +123,7 @@
                             <path
                                 d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
                         </svg>
-                        <span class="ms-3">Dashboard</span>
+                        <span class="ms-3">Acueil</span>
                     </a>
                 </li>
                 <li>
@@ -125,7 +134,7 @@
                             <path
                                 d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z" />
                         </svg>
-                        <span class="flex-1 ms-3 whitespace-nowrap">Kanban</span>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Formations</span>
 
                     </a>
                 </li>
@@ -137,19 +146,19 @@
                             <path
                                 d="m17.418 3.623-.018-.008a6.713 6.713 0 0 0-2.4-.569V2h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2H9.89A6.977 6.977 0 0 1 12 8v5h-2V8A5 5 0 1 0 0 8v6a1 1 0 0 0 1 1h8v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h6a1 1 0 0 0 1-1V8a5 5 0 0 0-2.582-4.377ZM6 12H4a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Z" />
                         </svg>
-                        <span class="flex-1 ms-3 whitespace-nowrap">Inbox</span>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Événements</span>
 
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white">
+                    <a href="statique-admine.html" class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white">
                         <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 20 18">
                             <path
                                 d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z" />
                         </svg>
-                        <span class="flex-1 ms-3 whitespace-nowrap">Users</span>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Tableau de Bord</span>
                     </a>
                 </li>
                 <li>
@@ -160,7 +169,7 @@
                             <path
                                 d="M17 5.923A1 1 0 0 0 16 5h-3V4a4 4 0 1 0-8 0v1H2a1 1 0 0 0-1 .923L.086 17.846A2 2 0 0 0 2.08 20h13.84a2 2 0 0 0 1.994-2.153L17 5.923ZM7 9a1 1 0 0 1-2 0V7h2v2Zm0-5a2 2 0 1 1 4 0v1H7V4Zm6 5a1 1 0 1 1-2 0V7h2v2Z" />
                         </svg>
-                        <span class="flex-1 ms-3 whitespace-nowrap">Products</span>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Jeu</span>
                     </a>
                 </li>
                 <li>
@@ -170,7 +179,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3" />
                         </svg>
-                        <span class="flex-1 ms-3 whitespace-nowrap">Sign In</span>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Se connecter</span>
                     </a>
                 </li>
                 <li>
@@ -184,26 +193,27 @@
                             <path
                                 d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z" />
                         </svg>
-                        <span class="flex-1 ms-3 whitespace-nowrap">Sign Up</span>
+                        <span class="flex-1 ms-3 whitespace-nowrap">S'inscrire</span>
                     </a>
                 </li>
             </ul>
         </div>
-    </aside>-->
+    </aside>
 
-    <div class="flex justify-center mb-10">
-        <div class="container flex flex-col justify-center w-[90%] max-w-[500px]">
-            <div class="flex justify-between  mt-6 w-[100%]" style="">
-                <h3 class="font-bold text-2xl " style="font-family: 'Kranky', serif; color:#011F5B;">
+
+    <div class="flex justify-center mb-10 sm:ml-64 ">
+        <div class="container flex flex-col justify-center w-[90%] sm:w-[100%]">
+            <div class="flex justify-between  mt-[100px] w-[100%] sm:px-4 ">
+                <h3 class="font-bold text-2xl" style="font-family: 'Kranky', serif; color:#011F5B;">
                     STATISTQUES
                 </h3>
 
-                <button class=" text-white rounded-sm px-1 hover:-translate-y-px font-bold"
-                    style="font-family:  serif; background-color: #008E97;">Ajouter événement</button>
+                <button class=" text-white rounded-sm px-1 hover:-translate-y-px font-bold sm:p-2 sm:mr-5"
+                    style="font-family: 'Kranky', serif; background-color: #008E97;">Ajouter événement</button>
             </div>
 
-            <div class=" border-gray-200  rounded-lg w-[100%] mt-10">
-                <div class="grid grid-cols-1 gap-y-10 mb-4 ">
+            <div class=" border-gray-200  rounded-lg w-[100%] mt-10 sm:px-4 sm:pt-4">
+                <div class="grid grid-cols-1 gap-y-10 mb-4 sm:grid-cols-3 sm:gap-4 ">
                     <div class="grid grid-cols-1 items-center justify-center h-24 rounded-sm bg-white"
                         style="box-shadow: 1px 4px 9px 1px #012169;">
                         <p class="" style="text-align: center;">Total des événements</p>
@@ -223,7 +233,7 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 gap-y-4 mt-[40px]">
+                <div class="grid grid-cols-1 gap-y-4 mt-[40px] sm:grid-cols-2 sm:gap-4 sm:grid-cols-2">
                     <div class="flex items-center justify-center rounded-sm bg-white p-1 hover:-translate-y-px"
                         style="box-shadow: 1px 4px 9px 1px #012169; flex-direction: column; row-gap: 10px;">
 
@@ -237,90 +247,25 @@
                         <canvas id="interestsChart" style=" margin-bottom: 10px;"></canvas>
 
                     </div>
-                </div>
 
-                <div class="grid grid-cols-1 gap-y-4 mt-[40px]">
                     <div class="flex items-center justify-center rounded-sm bg-white p-1 hover:-translate-y-px"
                         style="box-shadow: 1px 4px 9px 1px #012169; flex-direction: column; row-gap: 10px;">
 
                         <canvas id="trafficChart" style=" margin-bottom: 10px;"></canvas>
                     </div>
-                    
+
+
                 </div>
+
             </div>
 
         </div>
-
-
-
-        <!-- <div class="flex items-center justify-center h-48 mb-4 rounded-sm bg-white"
-            style="box-shadow: 1px 4px 9px 1px #012169;">
-            <p class="text-2xl text-gray-400 dark:text-gray-500">
-                <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                    viewBox="0 0 18 18">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M9 1v16M1 9h16" />
-                </svg>
-            </p>
-        </div>
-        <div class="grid grid-cols-2 gap-4">
-            <div class="flex items-center justify-center rounded-sm  bg-white h-28"
-                style="box-shadow: 1px 4px 9px 1px #012169;">
-                <p class="text-2xl text-gray-400 dark:text-gray-500">
-                    <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 18 18">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M9 1v16M1 9h16" />
-                    </svg>
-                </p>
-            </div>
-            <div class="flex items-center justify-center rounded-sm bg-white h-28 "
-                style="box-shadow: 1px 4px 9px 1px #012169;">
-                <p class="text-2xl text-gray-400 dark:text-gray-500">
-                    <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 18 18">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M9 1v16M1 9h16" />
-                    </svg>
-                </p>
-            </div>
-            <div class="flex items-center justify-center rounded-sm bg-white h-28 "
-                style="box-shadow: 1px 4px 9px 1px #012169;">
-                <p class="text-2xl text-gray-400 dark:text-gray-500">
-                    <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 18 18">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M9 1v16M1 9h16" />
-                    </svg>
-                </p>
-            </div>
-            <div class="flex items-center justify-center rounded-sm bg-white h-28 "
-                style="box-shadow: 1px 4px 9px 1px #012169;">
-                <p class="text-2xl text-gray-400 dark:text-gray-500">
-                    <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 18 18">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M9 1v16M1 9h16" />
-                    </svg>
-                </p>
-            </div> 
-        </div> -->
     </div>
-    
-
-    <footer class="flex justify-center bg-[#000f89]">
-        <div class="container w-[90%] max-w-[500px]">
-
-            <div class="footer-links flex flex-col items-center py-[10px]">    
-                <!-- margin-left: auto; -->
-                <!-- margin-right: auto;
-                width: 100%;
-                margin-top: 10px;
-                margin-bottom: 20px;
-                display: flex;
-                justify-content: space-around; -->
 
 
+    <footer class="flex justify-center bg-[#000f89] sm:ml-64">
+        <div class="container w-[90%] ">
+            <div class="footer-links flex flex-col items-center py-[10px]">
                 <div class="lniks-media flex justify-around mt-2.5 mb-5 w-[100%]">
                     <i class="fa-brands fa-facebook text-white"></i>
                     <i class="fa-brands fa-square-twitter text-white"></i>
@@ -328,8 +273,8 @@
                     <i class="fa-brands fa-youtube text-white"></i>
                 </div>
 
-                <hr class=" w-[100%] h-0.25 border-0 my-[10px] bg-[#D10404]">  
-               
+                <hr class=" w-[100%] h-0.25 border-0 my-[10px] bg-[#D10404]">
+
             </div>
 
             <div class="footer-bottom w-[100%] text-white text-center mt-4 mb-2.5 bg-black py-2.5 text-[10px]">
