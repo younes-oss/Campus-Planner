@@ -1,6 +1,20 @@
 
 const menu = document.querySelector('.menu');
 const navLinks = document.querySelector('.nav-links');
+const dark = document.getElementById('dark');
+const clair = document.getElementById('clair');
+
+dark.addEventListener('click' , function(){
+    clair.classList.remove('bg-blue-700');
+    dark.classList.add('bg-blue-700');
+    document.documentElement.classList.add('dark');
+});
+
+clair.addEventListener('click' , function(){
+    dark.classList.remove('bg-blue-700');
+    clair.classList.add('bg-blue-700');
+    document.documentElement.classList.remove('dark');
+});
 
 menu.addEventListener('click', function () {
     const x = navLinks.querySelector('.x');
@@ -17,7 +31,7 @@ navLinks.querySelector('.x').addEventListener('click', function () {
     const x = navLinks.querySelector('.x');
     const ul = navLinks.querySelector('.ul-links');
 
-    x.classList.remove('block');
+    x.classList.removegit('block');
     x.classList.add('hidden');
 
     ul.classList.remove('block');
