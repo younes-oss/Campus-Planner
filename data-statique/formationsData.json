@@ -1,0 +1,22 @@
+[
+    { "id": "form_1", "theme": "Développement Web Moderne", "duration": 12, "trainer": "Sofia Karim", "capacity": 20, "participants": ["u1", "u2", "u3"] },
+    { "id": "form_2", "theme": "Introduction au Machine Learning", "duration": 16, "trainer": "Hassan El Mekki", "capacity": 25, "participants": [] },
+    { "id": "form_3", "theme": "UI/UX Design Basics", "duration": 8, "trainer": "Leïla Ben Amar", "capacity": 15, "participants": ["u4", "u5"] },
+    { "id": "form_4", "theme": "Docker & DevOps", "duration": 10, "trainer": "Nabil Rachid", "capacity": 18, "participants": ["u6", "u7", "u8", "u9", "u10"] },
+    { "id": "form_5", "theme": "Sécurité des Applications", "duration": 14, "trainer": "Claire Fontaine", "capacity": 12, "participants": [] },
+    { "id": "form_6", "theme": "Cloud Computing (AWS/Azure)", "duration": 20, "trainer": "Youssef Alaoui", "capacity": 40, "participants": ["c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8", "c9", "c10"] },
+    { "id": "form_7", "theme": "Data Science avec Python", "duration": 24, "trainer": "Hassan El Mekki", "capacity": 30, "participants": ["d1", "d2", "d3", "d4", "d5", "d6", "d7", "d8", "d9", "d10", "d11", "d12", "d13", "d14", "d15", "d16", "d17", "d18", "d19", "d20", "d21", "d22", "d23", "d24"] },
+    { "id": "form_8", "theme": "Soft Skills: Communication", "duration": 6, "trainer": "Amira Sadi", "capacity": 50, "participants": ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9"] },
+    { "id": "form_9", "theme": "Développement Mobile (React Native)", "duration": 18, "trainer": "Sofia Karim", "capacity": 10, "participants": ["m1", "m2", "m3", "m4", "m5", "m6", "m7", "m8", "m9", "m10"] },
+    { "id": "form_10", "theme": "Modélisation Financière avec Excel", "duration": 15, "trainer": "Pierre Dubois", "capacity": 22, "participants": ["f1"] },
+    { "id": "form_11", "theme": "Prise de Parole en Public", "duration": 8, "trainer": "Amira Sadi", "capacity": 35, "participants": ["p1", "p2", "p3", "p4", "p5"] },
+    { "id": "form_12", "theme": "Fondamentaux de la Cybersécurité", "duration": 16, "trainer": "Driss Benslimane", "capacity": 28, "participants": ["c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8", "c9", "c10", "c11", "c12", "c13", "c14"] },
+    { "id": "form_13", "theme": "Initiation à la Finance Personnelle", "duration": 6, "trainer": "Nadia Ghali", "capacity": 60, "participants": ["n1", "n2", "n3", "n4", "n5", "n6"] },
+    { "id": "form_14", "theme": "Bases de données Avancées (SQL)", "duration": 28, "trainer": "Samir El Idrissi", "capacity": 10, "participants": ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10"] },
+    { "id": "form_15", "theme": "Méthodologie Agile et Scrum", "duration": 10, "trainer": "Nabil Rachid", "capacity": 20, "participants": ["a1", "a2", "a3", "a4", "a5", "a6", "a7", "a8", "a9", "a10", "a11", "a12", "a13", "a14", "a15", "a16"] },
+    { "id": "form_16", "theme": "Vidéographie et Montage", "duration": 14, "trainer": "Khalid Sbai", "capacity": 25, "participants": ["v1", "v2", "v3", "v4", "v5", "v6", "v7"] },
+    { "id": "form_17", "theme": "Méthodes de Recherche UX", "duration": 22, "trainer": "Leïla Ben Amar", "capacity": 15, "participants": ["r1", "r2", "r3", "r4"] },
+    { "id": "form_18", "theme": "Introduction au Mandarin", "duration": 40, "trainer": "Mei Lin", "capacity": 80, "participants": ["l1", "l2", "l3", "l4", "l5", "l6", "l7", "l8", "l9", "l10"] },
+    { "id": "form_19", "theme": "Développement de Jeux (Unity)", "duration": 32, "trainer": "Youssef Alaoui", "capacity": 18, "participants": ["g1", "g2", "g3", "g4", "g5", "g6", "g7", "g8", "g9", "g10", "g11", "g12", "g13", "g14", "g15", "g16", "g17", "g18"] },
+    { "id": "form_20", "theme": "Gestion de Projet (PMP Basics)", "duration": 18, "trainer": "Fatima Zahra", "capacity": 30, "participants": ["z1", "z2", "z3", "z4", "z5", "z6", "z7", "z8", "z9", "z10", "z11", "z12", "z13", "z14", "z15", "z16", "z17", "z18", "z19", "z20", "z21", "z22", "z23"] }
+]
