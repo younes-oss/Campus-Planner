@@ -18,10 +18,11 @@
 </head>
 
 
-<body class="bg-blue-50 relative m-0 p-0 sm:overflow-auto transition-colors duration-500" style="font-family: serif , 'Kranky';">
+<body class="bg-blue-50 relative m-0 p-0 sm:overflow-auto transition-colors duration-500 dark:bg-gray-900"
+    style="font-family: serif , 'Kranky';">
 
 
-    <header class="flex justify-center  bg-[#000f89] fixed top-0 left-0 right-0 z-10  sm:hidden">
+    <header class="flex justify-center  bg-[#000f89] dark:bg-gray-800 fixed top-0 left-0 right-0 z-10  sm:hidden">
         <div class="container flex justify-between items-center h-20 w-[90%]">
 
             <div class="logo font-bold" style="font-size: 25px; font-family: 'Kranky', serif;">
@@ -32,18 +33,26 @@
 
             </div>
 
+            <div class="w-11 h-11 border border-solid border-white justify-center items-center rounded-2xl hidden" id="sombre-app">
+                <i class="fa-regular fa-moon text-white"></i>
+            </div>
+
+            <div class="w-11 h-11 border border-solid border-white flex justify-center items-center rounded-2xl" id="clair-app">
+                <i class="fa-solid fa-lightbulb text-white"></i>
+            </div>
+
             <nav class="nav-links">
 
                 <span class="menu text-white">
                     <i class="fa-solid fa-bars"></i>
                 </span>
 
-                <span class="x text-white absolute top-[15px] right-[250px] z-11 hidden">
+                <span class="x text-white absolute top-[15px] right-[250px] z-11 hidden hover:text-red-600">
                     <i class="fa-solid fa-x"></i>
                 </span>
 
                 <ul
-                    class="ul-links pt-[70px] pl-[40px] pr-[10px] bg-[#005f69] absolute top-0 right-0 h-screen z-10 w-[300px] hidden">
+                    class="ul-links pt-[70px] pl-[40px] pr-[10px] bg-[#005f69] dark:bg-gray-800 absolute top-0 right-0 h-screen z-10 w-[300px] hidden">
                     <li><a href="#"
                             class="text-white py-[15px] block border-b-[1px] border-b-[solid] border-b-[#D10404]">Acueil</a>
                     </li>
@@ -73,7 +82,7 @@
         </div>
     </header>
 
-    <header class="justify-center fixed top-0 left-0 right-0 z-10 hidden bg-[#000f89] sm:flex">
+    <header class="justify-center fixed top-0 left-0 right-0 z-10 hidden bg-[#000f89] dark:bg-gray-800 sm:flex">
         <div class="container flex justify-between items-center h-20 w-[90%]">
             <div class="title text-black font-serif text-3xl ">
                 <img src="image-statique/Logo.png" alt="" class="w-15 h-15 rounded-full">
@@ -83,7 +92,7 @@
                 <div class="icon flex justify-center items-center bg-blue-100 h-11 rounded-full hover:-translate-y-px">
                     <div class="flex items-center gap-x-2">
                         <div class="w-11 h-11 flex justify-center items-center rounded-full" id="dark">
-                            <i class="fa-solid fa-moon m-0 p-0 text-2xl pl-2 "></i>
+                            <i class="fa-solid fa-moon m-0 p-0 text-2xl"></i>
                         </div>
                         <div class="bg-blue-700 w-11 h-11 flex justify-center items-center rounded-full" id="clair">
                             <i class="fa-solid fa-lightbulb text-amber-300 text-2xl"></i>
@@ -110,11 +119,12 @@
         aria-label="Sidebar">
 
         <div class="h-full px-3 py-4 bg-white dark:bg-gray-800 rounded-2xl">
-            <p class="px-3 py-4 " style="font-family: 'Kranky', serif; color:#011F5B;">Main Menu</p>
+            <p class="px-3 py-4 dark:text-white text-[#011F5B]" style="font-family: 'Kranky', serif;">Main Menu</p>
 
             <ul class="space-y-2 font-medium ml-4">
                 <li>
-                    <a href="#" class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white">
+                    <a href="#"
+                        class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white dark:hover:bg-gray-700 dark:text-white ">
                         <svg class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 22 21">
@@ -127,7 +137,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white">
+                    <a href="#"
+                        class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white dark:hover:bg-gray-700 dark:text-white ">
                         <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 18 18">
@@ -139,7 +150,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white">
+                    <a href="#"
+                        class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white dark:hover:bg-gray-700 dark:text-white ">
                         <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 20 20">
@@ -151,7 +163,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="statique-admine.html" class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white">
+                    <a href="statique-admine.html"
+                        class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white dark:hover:bg-gray-700 dark:text-white">
                         <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 20 18">
@@ -162,7 +175,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white">
+                    <a href="#"
+                        class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white dark:hover:bg-gray-700 dark:text-white">
                         <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 18 20">
@@ -173,7 +187,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white">
+                    <a href="#"
+                        class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white dark:hover:bg-gray-700 dark:text-white">
                         <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -183,7 +198,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white">
+                    <a href="#"
+                        class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white dark:hover:bg-gray-700 dark:text-white">
                         <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 20 20">
@@ -204,56 +220,56 @@
     <div class="flex justify-center mb-10 sm:ml-64 ">
         <div class="container flex flex-col justify-center w-[90%] sm:w-[100%]">
             <div class="flex justify-between  mt-[100px] w-[100%] sm:px-4 ">
-                <h3 class="font-bold text-2xl" style="font-family: 'Kranky', serif; color:#011F5B;">
+                <h3 class="font-bold text-2xl text-[#011F5B] dark:text-white " style="font-family: 'Kranky', serif;">
                     STATISTQUES
                 </h3>
 
-                <button class=" text-white rounded-sm px-1 hover:-translate-y-px font-bold sm:p-2 sm:mr-5"
-                    style="font-family: 'Kranky', serif; background-color: #008E97;">Ajouter événement</button>
+                <button
+                    class=" text-white rounded-sm px-1 hover:-translate-y-px font-bold sm:p-2 sm:mr-5 bg-[#008E97] dark:bg-gray-800 dark:shadow-[0_0_10px_white]"
+                    style="font-family: 'Kranky', serif;">Ajouter événement</button>
             </div>
 
             <div class=" border-gray-200  rounded-lg w-[100%] mt-10 sm:px-4 sm:pt-4">
                 <div class="grid grid-cols-1 gap-y-10 mb-4 sm:grid-cols-3 sm:gap-4 ">
-                    <div class="grid grid-cols-1 items-center justify-center h-24 rounded-sm bg-white"
+                    <div class="grid grid-cols-1 items-center justify-center h-24 rounded-sm hover:-translate-y-2 bg-white dark:bg-gray-800"
                         style="box-shadow: 1px 4px 9px 1px #012169;">
-                        <p class="" style="text-align: center;">Total des événements</p>
-                        <p class="text-blue-500 font-bold " style="text-align: center;">10</p>
+                        <p class="dark:text-white" style="text-align: center;">Total des événements</p>
+                        <p class="text-blue-500 font-bold dark:text-gray-500" style="text-align: center;" id="nbrEvent"></p>
                     </div>
-                    <div class="grid grid-cols-1 items-center justify-center h-24 rounded-sm bg-white"
+                    <div class="grid grid-cols-1 items-center justify-center h-24 rounded-sm hover:-translate-y-2 bg-white dark:bg-gray-800"
                         style="box-shadow: 1px 4px 9px 1px #012169;">
 
-                        <p style="text-align: center;">Total des formations</p>
-                        <p class="text-blue-500 font-bold " style="text-align: center;">10</p>
+                        <p class="dark:text-white" style=" text-align: center;">Total des formations</p>
+                        <p class="text-blue-500 font-bold dark:text-gray-500" style="text-align: center;" id="nbrFormations"></p>
                     </div>
-                    <div class="grid grid-cols-1 items-center justify-center h-24 rounded-sm bg-white"
+                    <div class="grid grid-cols-1 items-center justify-center h-24 rounded-sm hover:-translate-y-2 bg-white dark:bg-gray-800"
                         style="box-shadow: 1px 4px 9px 1px #012169 ;">
 
-                        <p style="text-align: center;">Total des étudiants</p>
-                        <p class="text-blue-500 font-bold " style="text-align: center;">10</p>
+                        <p class="dark:text-white" style="text-align: center;">Total des étudiants</p>
+                        <p class="text-blue-500 font-bold dark:text-gray-500" style="text-align: center;">10</p>
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 gap-y-4 mt-[40px] sm:grid-cols-2 sm:gap-4 sm:grid-cols-2">
-                    <div class="flex items-center justify-center rounded-sm bg-white p-1 hover:-translate-y-px"
+                    <div class="flex items-center justify-center rounded-sm bg-white p-1 hover:-translate-y-2 dark:bg-gray-800"
                         style="box-shadow: 1px 4px 9px 1px #012169; flex-direction: column; row-gap: 10px;">
 
                         <canvas id="ageDistributionChart" style=" margin-bottom: 10px;"></canvas>
 
                     </div>
 
-                    <div class="flex items-center justify-center rounded-sm bg-white p-1 hover:-translate-y-px"
-                        style="box-shadow: 1px 4px 9px 1px #012169; flex-direction: column; row-gap: 10px;">
-
-                        <canvas id="interestsChart" style=" margin-bottom: 10px;"></canvas>
-
-                    </div>
-
-                    <div class="flex items-center justify-center rounded-sm bg-white p-1 hover:-translate-y-px"
+                    <div class="flex items-center justify-center rounded-sm bg-white p-1 hover:-translate-y-2 dark:bg-gray-800"
                         style="box-shadow: 1px 4px 9px 1px #012169; flex-direction: column; row-gap: 10px;">
 
                         <canvas id="trafficChart" style=" margin-bottom: 10px;"></canvas>
                     </div>
 
+                    <div class="flex items-center justify-center rounded-sm bg-white p-1 hover:-translate-x-2 dark:bg-gray-800"
+                        style="box-shadow: 1px 4px 9px 1px #012169; flex-direction: column; row-gap: 10px;">
+
+                        <canvas id="remplissageChart" style=" margin-bottom: 10px;"></canvas>
+
+                    </div>
 
                 </div>
 
@@ -263,21 +279,22 @@
     </div>
 
 
-    <footer class="flex justify-center bg-[#000f89] sm:ml-64">
+    <footer class="flex justify-center bg-[#000f89] dark:bg-gray-800 sm:ml-65 sm:mr-1">
         <div class="container w-[90%] ">
             <div class="footer-links flex flex-col items-center py-[10px]">
                 <div class="lniks-media flex justify-around mt-2.5 mb-5 w-[100%]">
-                    <i class="fa-brands fa-facebook text-white"></i>
-                    <i class="fa-brands fa-square-twitter text-white"></i>
-                    <i class="fa-brands fa-square-instagram text-white"></i>
-                    <i class="fa-brands fa-youtube text-white"></i>
+                    <i class="fa-brands fa-facebook text-white hover:-translate-y-2"></i>
+                    <i class="fa-brands fa-square-twitter text-white hover:-translate-y-2"></i>
+                    <i class="fa-brands fa-square-instagram text-white hover:-translate-y-2"></i>
+                    <i class="fa-brands fa-youtube text-white hover:-translate-y-2"></i>
                 </div>
 
                 <hr class=" w-[100%] h-0.25 border-0 my-[10px] bg-[#D10404]">
 
             </div>
 
-            <div class="footer-bottom w-[100%] text-white text-center mt-4 mb-2.5 bg-black py-2.5 text-[10px]">
+            <div
+                class="footer-bottom w-[100%] text-white text-center mt-4 mb-2.5 bg-black dark:bg-gray-900 py-2.5 text-[10px]">
                 <p>© 2025 Campus Planner Tous droits réservés</p>
             </div>
         </div>
