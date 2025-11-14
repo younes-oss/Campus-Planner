@@ -7,103 +7,113 @@
     <title>Statiques</title>
     <link rel="stylesheet" href="src/all.min.css">
     <script defer src="formation(admin).js"></script>
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kranky&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@410&display=swap"
+        rel="stylesheet">
 
-   <link rel="stylesheet" href="src/style.css">
-   <script defer src="formation.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-   <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 
-    <style>
-@media (max-width: 640px) {
-  #respo{
-    margin-left: 10px;
-  }
-  #txtemdf{
-     margin-left: 8px;
-  }
-  #squareps{
-     margin-top: 10px;
-  }
+    <link rel="stylesheet" href="src/style.css">
+    <!-- <script defer src="formation.js"></script>
+    <script defer src="formation(admin).js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 
-}
-@media (max-width: 768px) {
- 
-    #respo{
-       margin-left: 250px;
-       width: 517px;
-      
-    }
-    #txtemdf{
-       margin-left: 250px;
-       width: 460px;
-       text-align: center;
-    }
-    #tiltle902{
-       margin-right: 5px;
-    }
-    #text904{
-       margin-top: 30px;
-       margin-right: -150px;
-    }
-    #squareps{
-       margin-top: 34px;
-      margin-left: -150px;
-    }
-  }
+    <!-- <style>
+        @media (max-width: 640px) {
+            #respo {
+                margin-left: 10px;
+            }
 
-  @media (min-width: 1440px) {
- 
-    #respo{
-       margin-left: 250px;
-       width: 1190px;
-      
-    }
+            #txtemdf {
+                margin-left: 8px;
+            }
 
-    }
+            #squareps {
+                margin-top: 10px;
+            }
 
- 
-    
-    @media (max-width: 455px) {
-   
-      #respo{
-         margin-left: 2px;
-         width: 372px;
-        
-      }
-  
-  
-       #txtemdf{
-         margin-left: 10px;
-         text-align: center;
-  
-      }
-  
-        #tiltle902{
-         margin-left: -10px;
-      }
-  
-       #text904{
-         margin-top: 50px;
-         margin-right: 50px;
-      }
-  
-       #squareps{
-         margin-top: 55px;
-        margin-left: -150px;
-      }
-  
-      }
+        }
 
-</style>
+        @media (max-width: 768px) {
 
-    
+            #respo {
+                margin-left: 250px;
+                width: 517px;
+
+            }
+
+            #txtemdf {
+                margin-left: 250px;
+                width: 460px;
+                text-align: center;
+            }
+
+            #tiltle902 {
+                margin-right: 5px;
+            }
+
+            #text904 {
+                margin-top: 30px;
+                margin-right: -150px;
+            }
+
+            #squareps {
+                margin-top: 34px;
+                margin-left: -150px;
+            }
+        }
+
+        @media (min-width: 1440px) {
+
+            #respo {
+                margin-left: 250px;
+                width: 1190px;
+
+            }
+
+        }
+
+
+
+        @media (max-width: 455px) {
+
+            #respo {
+                margin-left: 2px;
+                width: 372px;
+
+            }
+
+
+            #txtemdf {
+                margin-left: 10px;
+                text-align: center;
+
+            }
+
+            #tiltle902 {
+                margin-left: -10px;
+            }
+
+            #text904 {
+                margin-top: 50px;
+                margin-right: 50px;
+            }
+
+            #squareps {
+                margin-top: 55px;
+                margin-left: -150px;
+            }
+
+        }
+    </style> -->
+
+
 </head>
 
 <body class="bg-blue-50">
-  
 
-   <header class="flex justify-center  bg-[#000f89] fixed top-0 left-0 right-0 z-10  sm:hidden">
+
+    <header class="flex justify-center  bg-[#000f89] dark:bg-gray-800 fixed top-0 left-0 right-0 z-10  sm:hidden">
         <div class="container flex justify-between items-center h-20 w-[90%]">
 
             <div class="logo font-bold" style="font-size: 25px; font-family: 'Kranky', serif;">
@@ -114,40 +124,44 @@
 
             </div>
 
+            <div class="w-11 h-11 border border-solid border-white justify-center items-center rounded-2xl hidden"
+                id="sombre-app">
+                <i class="fa-regular fa-moon text-white"></i>
+            </div>
+
+            <div class="w-11 h-11 border border-solid border-white flex justify-center items-center rounded-2xl"
+                id="clair-app">
+                <i class="fa-solid fa-lightbulb text-white"></i>
+            </div>
+
             <nav class="nav-links">
 
                 <span class="menu text-white">
                     <i class="fa-solid fa-bars"></i>
                 </span>
 
-                <span class="x text-white absolute top-[15px] right-[250px] z-11 hidden">
+                <span class="x text-white absolute top-[15px] right-[250px] z-11 hidden hover:text-red-600">
                     <i class="fa-solid fa-x"></i>
                 </span>
 
                 <ul
-                    class="ul-links pt-[70px] pl-[40px] pr-[10px] bg-[#005f69] absolute top-0 right-0 h-screen z-10 w-[300px] hidden">
-                    <li><a href="#"
+                    class="ul-links pt-[70px] pl-[40px] pr-[10px] bg-[#005f69] dark:bg-gray-800 absolute top-0 right-0 h-screen z-10 w-[300px] hidden">
+                    <li><a href="index.html"
                             class="text-white py-[15px] block border-b-[1px] border-b-[solid] border-b-[#D10404]">Acueil</a>
                     </li>
-                    <li><a href="#"
+                    <li><a href="formation.html"
                             class="text-white py-[15px] block border-b-[1px] border-b-[solid] border-b-[#D10404]">Formations</a>
                     </li>
                     <li><a href="#"
                             class="text-white py-[15px] block border-b-[1px] border-b-[solid] border-b-[#D10404]">Événements</a>
                     </li>
-                    <li><a href="statique-admine.html"
-                            class="text-white py-[15px] block border-b-[1px] border-b-[solid] border-b-[#D10404]">Tableau
-                            de Bord</a>
-                    </li>
-                    <li><a href="statique-admine.html"
+
+                    <li><a href=""
                             class="text-white py-[15px] block border-b-[1px] border-b-[solid] border-b-[#D10404]">Jeu</a>
                     </li>
-                    <li><a href="statique-admine.html"
-                            class="text-white py-[15px] block border-b-[1px] border-b-[solid] border-b-[#D10404]">Se
-                            connecter</a>
+                    <li><a href="statique-admine.html" class="text-white py-[15px] block">Admine</a>
                     </li>
-                    <li><a href="#" class="text-white py-[15px] block ">S'inscrire</a>
-                    </li>
+
 
                 </ul>
             </nav>
@@ -155,7 +169,7 @@
         </div>
     </header>
 
-    <header class="justify-center fixed top-0 left-0 right-0 z-10 hidden bg-[#000f89] sm:flex">
+    <header class="justify-center fixed top-0 left-0 right-0 z-10 hidden bg-[#000f89] dark:bg-gray-800 sm:flex">
         <div class="container flex justify-between items-center h-20 w-[90%]">
             <div class="title text-black font-serif text-3xl ">
                 <img src="image-statique/Logo.png" alt="" class="w-15 h-15 rounded-full">
@@ -165,7 +179,7 @@
                 <div class="icon flex justify-center items-center bg-blue-100 h-11 rounded-full hover:-translate-y-px">
                     <div class="flex items-center gap-x-2">
                         <div class="w-11 h-11 flex justify-center items-center rounded-full" id="dark">
-                            <i class="fa-solid fa-moon m-0 p-0 text-2xl pl-2 "></i>
+                            <i class="fa-solid fa-moon m-0 p-0 text-2xl"></i>
                         </div>
                         <div class="bg-blue-700 w-11 h-11 flex justify-center items-center rounded-full" id="clair">
                             <i class="fa-solid fa-lightbulb text-amber-300 text-2xl"></i>
@@ -192,24 +206,25 @@
         aria-label="Sidebar">
 
         <div class="h-full px-3 py-4 bg-white dark:bg-gray-800 rounded-2xl">
-            <p class="px-3 py-4 " style="font-family: 'Kranky', serif; color:#011F5B;">Main Menu</p>
+            <p class="px-3 py-4 dark:text-white text-[#011F5B]" style="font-family: 'Kranky', serif;">Main Menu</p>
 
             <ul class="space-y-2 font-medium ml-4">
                 <li>
-                    <a href="#" class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white">
-                        <svg class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                    <a href="statique-admine.html"
+                        class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white dark:hover:bg-gray-700 dark:text-white">
+                        <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                            viewBox="0 0 22 21">
+                            viewBox="0 0 20 18">
                             <path
-                                d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                            <path
-                                d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
+                                d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z" />
                         </svg>
-                        <span class="ms-3">Acueil</span>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Tableau de Bord</span>
                     </a>
                 </li>
+
                 <li>
-                    <a href="formation-studentsborders.html" class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white">
+                    <a href="formation.html"
+                        class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white dark:hover:bg-gray-700 dark:text-white ">
                         <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 18 18">
@@ -221,7 +236,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white">
+                    <a href="#"
+                        class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white dark:hover:bg-gray-700 dark:text-white ">
                         <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 20 20">
@@ -232,19 +248,10 @@
 
                     </a>
                 </li>
+
                 <li>
-                    <a href="statique-admine.html" class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white">
-                        <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                            viewBox="0 0 20 18">
-                            <path
-                                d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z" />
-                        </svg>
-                        <span class="flex-1 ms-3 whitespace-nowrap">Tableau de Bord</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white">
+                    <a href="#"
+                        class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white dark:hover:bg-gray-700 dark:text-white">
                         <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 18 20">
@@ -255,66 +262,71 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white">
+                    <a href="index.html"
+                        class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white dark:hover:bg-gray-700 dark:text-white">
                         <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3" />
                         </svg>
-                        <span class="flex-1 ms-3 whitespace-nowrap">Se connecter</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="flex items-center p-2 text-black hover:bg-blue-600 group hover:text-white">
-                        <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                            viewBox="0 0 20 20">
-                            <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z" />
-                            <path
-                                d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z" />
-                            <path
-                                d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z" />
-                        </svg>
-                        <span class="flex-1 ms-3 whitespace-nowrap">S'inscrire</span>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Etudiant</span>
                     </a>
                 </li>
             </ul>
         </div>
     </aside>
 
+    <div class="flex justify-center mt-5 sm:ml-64 ">
+        <div class="container p-5 w-[90%">
+            <div class=" mt-15">
+                <!-- <span id="squareps" class="block bg-cyan-400 rotate-45 xs:mt-4 sm:mt-3 md:mt-6 lg:mt-12
+                      w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10">
+                </span> -->
 
+                <h1 id="text904 text-center" class="font-bold mt-5 
+                    text-[22px] sm:text-[28px] md:text-[45px] lg:text-[60px] text-center">
+                    Formations
+                </h1>
 
-    
-    <div class="flex justify-center  gap-2 mt-15 ml-50">
-     <span id="squareps" class="block bg-cyan-400 rotate-45 xs:mt-4 sm:mt-3 md:mt-6 lg:mt-12
-  w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10">
-</span>
+            </div>
 
-<h1 id="text904" class="font-bold mt-5 
-  text-[22px] sm:text-[28px] md:text-[45px] lg:text-[60px]">
-  Formations
-</h1>
+            <div id="tiltle902" class=" mt-12">
+                <!-- <span class="w-3 h-3 bg-emerald-500 mt-1 rounded-4xl"></span> -->
+                <h1 class="font-bold text-3xl text-center"> As an admin</h1>
+            </div>
 
+            <div class="flex justify-center  mt-10">
+                <h1 id="txtemdf" class="font-bold text-1xl  text-center">
+                    As an admin, you have full control
+                    over the
+                    training courses. You can easily add new courses, modify existing ones, delete courses that are no
+                    longer
+                    relevant, and view all the details of each course. This ensures you can keep the training catalogue
+                    up-to-date, organized, and tailored to the needs of your learners.
+                </h1>
+            </div>
+        </div>
     </div>
-    
-    <div id="tiltle902" class="flex justify-center ml-55  gap-5 mt-12">
-     <span class="w-3 h-3 bg-emerald-500 mt-1 rounded-4xl"></span>
-    <h1  class="font-bold text-3xl "> As an admin</h1>
-  </div>
-    
-      <div class="flex justify-center  mt-10">
-      <h1 id="txtemdf" class="font-bold text-1xl w-190 ml-65 text-center"> As an admin, you have full control over the training courses. You can easily add new courses, modify existing ones, delete courses that are no longer relevant, and view all the details of each course. This ensures you can keep the training catalogue up-to-date, organized, and tailored to the needs of your learners.</h1>
-    </div>
 
-    <div id="respo" class=" lg:w-[80.3%] ml-62 sm:relative overflow-x-auto  shadow-md sm:rounded-lg mt-10 ">
+
+
+
+    <div id="respo" class="sm:relative mb-10 sm:ml-65 sm:p-2 mt-10 ">
         <div class="text-right">
-            <button id="openFormBtn"
+            <!-- <button id="openFormBtn"
                 class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 ajouter
+            </button> -->
+
+            <button id="openFormBtn"
+                class=" text-white rounded-sm p-2 mr-5 hover:-translate-y-px font-bold mb-5 sm:p-2 sm:mr-5 bg-[#008E97] dark:bg-gray-800 dark:shadow-[0_0_10px_white]"
+                style="font-family: 'Kranky', serif;">Ajouter événement
             </button>
+
         </div>
 
-        <table class="min-w-full table-auto text-sm text-left text-gray-500 border border-gray-300 dark:border-gray-600">
+        <table
+            class="min-w-full table-auto text-sm text-left text-gray-500 border border-gray-300 dark:border-gray-600">
             <thead class="text-xs text-fuchsia-950 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                 <tr>
                     <th scope="col" colspan="6"
@@ -332,17 +344,17 @@
                     <th scope="col" class="px-6 py-3">
                         Formateur
                     </th>
-                     <th class="px-6 py-3"></th> 
+                    <th class="px-6 py-3"></th>
                 </tr>
             </thead>
-            
+
             <tbody id="tableBody">
-            
+
             </tbody>
         </table>
     </div>
 
-   
+
     <div id="modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
         <div class="bg-white p-6 rounded-2xl w-[90%] max-w-md">
             <h3 class="text-xl font-bold mb-4 text-center">Ajouter une Formation</h3>
@@ -350,10 +362,11 @@
                 <input type="text" id="title" placeholder="Thème" class="border rounded-lg p-2" required>
                 <input type="number" id="duration" placeholder="Durée (heures)" class="border rounded-lg p-2" required>
                 <input type="text" id="trainer" placeholder="Formateur" class="border rounded-lg p-2" required>
-              
+
 
                 <div class="flex gap-3 justify-center mt-3">
-                    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Ajouter</button>
+                    <button type="submit"
+                        class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Ajouter</button>
                     <button type="button" id="cancelBtn"
                         class="bg-gray-300 text-black px-4 py-2 rounded-lg hover:bg-gray-400">Annuler</button>
                 </div>
@@ -361,28 +374,30 @@
         </div>
     </div>
 
-  
+
     <div id="successPopup" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
         <div class="bg-white p-6 rounded-2xl text-center shadow-lg">
             <h3 class="text-xl font-semibold mb-3">Formation ajoutée avec succès</h3>
             <button id="confirmBtn" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">OK</button>
         </div>
     </div>
-    <footer class="flex justify-center bg-[#000f89] sm:ml-64">
+
+    <footer class="flex justify-center bg-[#000f89] dark:bg-gray-800 sm:ml-65 sm:mr-1">
         <div class="container w-[90%] ">
             <div class="footer-links flex flex-col items-center py-[10px]">
                 <div class="lniks-media flex justify-around mt-2.5 mb-5 w-[100%]">
-                    <i class="fa-brands fa-facebook text-white"></i>
-                    <i class="fa-brands fa-square-twitter text-white"></i>
-                    <i class="fa-brands fa-square-instagram text-white"></i>
-                    <i class="fa-brands fa-youtube text-white"></i>
+                    <i class="fa-brands fa-facebook text-white hover:-translate-y-2"></i>
+                    <i class="fa-brands fa-square-twitter text-white hover:-translate-y-2"></i>
+                    <i class="fa-brands fa-square-instagram text-white hover:-translate-y-2"></i>
+                    <i class="fa-brands fa-youtube text-white hover:-translate-y-2"></i>
                 </div>
 
                 <hr class=" w-[100%] h-0.25 border-0 my-[10px] bg-[#D10404]">
 
             </div>
 
-            <div class="footer-bottom w-[100%] text-white text-center mt-4 mb-2.5 bg-black py-2.5 text-[10px]">
+            <div
+                class="footer-bottom w-[100%] text-white text-center mt-4 mb-2.5 bg-black dark:bg-gray-900 py-2.5 text-[10px]">
                 <p>© 2025 Campus Planner Tous droits réservés</p>
             </div>
         </div>

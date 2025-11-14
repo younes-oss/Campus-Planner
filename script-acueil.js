@@ -131,7 +131,7 @@ navLinks.querySelector('.x').addEventListener('click', function () {
     ul.classList.add('hidden');
 });
 
-const lienImage = ["image-statique/im5.jpg", "image-statique/im2.jpg", "image-statique/im4.jpg", "image-statique/im7.jpg"];
+const lienImage = ["image-statique/im5.jpg", "image-statique/im1.jpg", "image-statique/im2.jpg", "image-statique/im3.jpg", "image-statique/im4.jpg", "image-statique/im6.png", "image-statique/im7.jpg"];
 let indexImage = 0;
 
 function changerImage() {
@@ -143,8 +143,8 @@ function changerImage() {
     // document.getElementById('section-image').classList.add(`bg-[url("${lienImage[indexImage]}")]`);
     const section = document.getElementById('section-image');
     section.style.backgroundImage = `url(${lienImage[indexImage]})`;
-    section.style.backgroundSize = 'cover';    
-    section.style.backgroundPosition = 'center'; 
+    section.style.backgroundSize = 'cover';
+    section.style.backgroundPosition = 'center';
 
     indexImage++;
 
